@@ -1,0 +1,4 @@
+/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/cmake-build-debug/CMakeFiles/cpsMain.dir
+/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/cmake-build-debug/CMakeFiles/cpsTests.dir

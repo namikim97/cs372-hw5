@@ -1,0 +1,74 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/compound.h
+utility
+-
+shapes.h
+/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/shapes.h
+string
+-
+initializer_list
+-
+memory
+-
+vector
+-
+
+/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/cps.cpp
+page.h
+/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/page.h
+shapes.h
+/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/shapes.h
+compound.h
+/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/compound.h
+human.h
+/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/human.h
+string
+-
+iostream
+-
+fstream
+-
+memory
+-
+initializer_list
+-
+
+/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/human.h
+shapes.h
+/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/shapes.h
+compound.h
+/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/compound.h
+random
+-
+chrono
+-
+
+/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/page.h
+shapes.h
+/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/shapes.h
+string
+-
+vector
+-
+
+/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/shapes.h
+string
+-
+vector
+-
+cmath
+-
+iostream
+-
+fstream
+-
+memory
+-
+
