@@ -8,23 +8,23 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/cmake-build-debug"/>
+				<Option working_dir="/Users/NamiKim/Desktop/cs hw/cs372/hw5/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/NamiKim/Desktop/cs\ hw/cs372/project2_cps/cs372_project2_cps/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/NamiKim/Desktop/cs\ hw/cs372/project2_cps/cs372_project2_cps/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/NamiKim/Desktop/cs\ hw/cs372/project2_cps/cs372_project2_cps/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/NamiKim/Desktop/cs\ hw/cs372/project2_cps/cs372_project2_cps/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/NamiKim/Desktop/cs\ hw/cs372/hw5/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/NamiKim/Desktop/cs\ hw/cs372/hw5/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/NamiKim/Desktop/cs\ hw/cs372/hw5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/NamiKim/Desktop/cs\ hw/cs372/hw5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="cpsMain">
-				<Option output="/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/cmake-build-debug/cpsMain" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/cmake-build-debug"/>
+				<Option output="/Users/NamiKim/Desktop/cs hw/cs372/hw5/cmake-build-debug/cpsMain" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/NamiKim/Desktop/cs hw/cs372/hw5/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/."/>
+					<Add directory="/Users/NamiKim/Desktop/cs hw/cs372/hw5/."/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/9.0.0/include"/>
@@ -34,20 +34,20 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/NamiKim/Desktop/cs\ hw/cs372/project2_cps/cs372_project2_cps/cmake-build-debug/Makefile&quot;  VERBOSE=1 cpsMain"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/NamiKim/Desktop/cs\ hw/cs372/project2_cps/cs372_project2_cps/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/NamiKim/Desktop/cs\ hw/cs372/project2_cps/cs372_project2_cps/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/NamiKim/Desktop/cs\ hw/cs372/project2_cps/cs372_project2_cps/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/NamiKim/Desktop/cs\ hw/cs372/hw5/cmake-build-debug/Makefile&quot;  VERBOSE=1 cpsMain"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/NamiKim/Desktop/cs\ hw/cs372/hw5/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/NamiKim/Desktop/cs\ hw/cs372/hw5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/NamiKim/Desktop/cs\ hw/cs372/hw5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="cpsMain/fast">
-				<Option output="/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/cmake-build-debug/cpsMain" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/cmake-build-debug"/>
+				<Option output="/Users/NamiKim/Desktop/cs hw/cs372/hw5/cmake-build-debug/cpsMain" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/NamiKim/Desktop/cs hw/cs372/hw5/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/."/>
+					<Add directory="/Users/NamiKim/Desktop/cs hw/cs372/hw5/."/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/9.0.0/include"/>
@@ -57,40 +57,40 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/NamiKim/Desktop/cs\ hw/cs372/project2_cps/cs372_project2_cps/cmake-build-debug/Makefile&quot;  VERBOSE=1 cpsMain/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/NamiKim/Desktop/cs\ hw/cs372/project2_cps/cs372_project2_cps/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/NamiKim/Desktop/cs\ hw/cs372/project2_cps/cs372_project2_cps/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/NamiKim/Desktop/cs\ hw/cs372/project2_cps/cs372_project2_cps/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/NamiKim/Desktop/cs\ hw/cs372/hw5/cmake-build-debug/Makefile&quot;  VERBOSE=1 cpsMain/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/NamiKim/Desktop/cs\ hw/cs372/hw5/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/NamiKim/Desktop/cs\ hw/cs372/hw5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/NamiKim/Desktop/cs\ hw/cs372/hw5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/cmake-build-debug"/>
+				<Option working_dir="/Users/NamiKim/Desktop/cs hw/cs372/hw5/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/NamiKim/Desktop/cs\ hw/cs372/project2_cps/cs372_project2_cps/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/NamiKim/Desktop/cs\ hw/cs372/project2_cps/cs372_project2_cps/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/NamiKim/Desktop/cs\ hw/cs372/project2_cps/cs372_project2_cps/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/NamiKim/Desktop/cs\ hw/cs372/project2_cps/cs372_project2_cps/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/NamiKim/Desktop/cs\ hw/cs372/hw5/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/NamiKim/Desktop/cs\ hw/cs372/hw5/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/NamiKim/Desktop/cs\ hw/cs372/hw5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/NamiKim/Desktop/cs\ hw/cs372/hw5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/cmake-build-debug"/>
+				<Option working_dir="/Users/NamiKim/Desktop/cs hw/cs372/hw5/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/NamiKim/Desktop/cs\ hw/cs372/project2_cps/cs372_project2_cps/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/NamiKim/Desktop/cs\ hw/cs372/project2_cps/cs372_project2_cps/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/NamiKim/Desktop/cs\ hw/cs372/project2_cps/cs372_project2_cps/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/NamiKim/Desktop/cs\ hw/cs372/project2_cps/cs372_project2_cps/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/NamiKim/Desktop/cs\ hw/cs372/hw5/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/NamiKim/Desktop/cs\ hw/cs372/hw5/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/NamiKim/Desktop/cs\ hw/cs372/hw5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/NamiKim/Desktop/cs\ hw/cs372/hw5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="cpsTests">
-				<Option output="/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/cmake-build-debug/cpsTests" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/cmake-build-debug"/>
+				<Option output="/Users/NamiKim/Desktop/cs hw/cs372/hw5/cmake-build-debug/cpsTests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/NamiKim/Desktop/cs hw/cs372/hw5/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/."/>
+					<Add directory="/Users/NamiKim/Desktop/cs hw/cs372/hw5/."/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/9.0.0/include"/>
@@ -100,20 +100,20 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/NamiKim/Desktop/cs\ hw/cs372/project2_cps/cs372_project2_cps/cmake-build-debug/Makefile&quot;  VERBOSE=1 cpsTests"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/NamiKim/Desktop/cs\ hw/cs372/project2_cps/cs372_project2_cps/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/NamiKim/Desktop/cs\ hw/cs372/project2_cps/cs372_project2_cps/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/NamiKim/Desktop/cs\ hw/cs372/project2_cps/cs372_project2_cps/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/NamiKim/Desktop/cs\ hw/cs372/hw5/cmake-build-debug/Makefile&quot;  VERBOSE=1 cpsTests"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/NamiKim/Desktop/cs\ hw/cs372/hw5/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/NamiKim/Desktop/cs\ hw/cs372/hw5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/NamiKim/Desktop/cs\ hw/cs372/hw5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="cpsTests/fast">
-				<Option output="/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/cmake-build-debug/cpsTests" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/cmake-build-debug"/>
+				<Option output="/Users/NamiKim/Desktop/cs hw/cs372/hw5/cmake-build-debug/cpsTests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/NamiKim/Desktop/cs hw/cs372/hw5/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/."/>
+					<Add directory="/Users/NamiKim/Desktop/cs hw/cs372/hw5/."/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/9.0.0/include"/>
@@ -123,55 +123,38 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/NamiKim/Desktop/cs\ hw/cs372/project2_cps/cs372_project2_cps/cmake-build-debug/Makefile&quot;  VERBOSE=1 cpsTests/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/NamiKim/Desktop/cs\ hw/cs372/project2_cps/cs372_project2_cps/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/NamiKim/Desktop/cs\ hw/cs372/project2_cps/cs372_project2_cps/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/NamiKim/Desktop/cs\ hw/cs372/project2_cps/cs372_project2_cps/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/NamiKim/Desktop/cs\ hw/cs372/hw5/cmake-build-debug/Makefile&quot;  VERBOSE=1 cpsTests/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/NamiKim/Desktop/cs\ hw/cs372/hw5/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/NamiKim/Desktop/cs\ hw/cs372/hw5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/NamiKim/Desktop/cs\ hw/cs372/hw5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/catch.hpp">
-			<Option target="cpsTests"/>
-		</Unit>
-		<Unit filename="/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/compound.cpp">
+		<Unit filename="/Users/NamiKim/Desktop/cs hw/cs372/hw5/compound.cpp">
 			<Option target="cpsMain"/>
 			<Option target="cpsTests"/>
 		</Unit>
-		<Unit filename="/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/compound.h">
+		<Unit filename="/Users/NamiKim/Desktop/cs hw/cs372/hw5/compound.h">
 			<Option target="cpsMain"/>
 			<Option target="cpsTests"/>
 		</Unit>
-		<Unit filename="/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/cps.cpp">
-			<Option target="cpsMain"/>
-		</Unit>
-		<Unit filename="/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/cpsTests.cpp">
-			<Option target="cpsTests"/>
-		</Unit>
-		<Unit filename="/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/human.cpp">
+		<Unit filename="/Users/NamiKim/Desktop/cs hw/cs372/hw5/page.cpp">
 			<Option target="cpsMain"/>
 			<Option target="cpsTests"/>
 		</Unit>
-		<Unit filename="/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/human.h">
+		<Unit filename="/Users/NamiKim/Desktop/cs hw/cs372/hw5/page.h">
 			<Option target="cpsMain"/>
 			<Option target="cpsTests"/>
 		</Unit>
-		<Unit filename="/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/page.cpp">
+		<Unit filename="/Users/NamiKim/Desktop/cs hw/cs372/hw5/shapes.cpp">
 			<Option target="cpsMain"/>
 			<Option target="cpsTests"/>
 		</Unit>
-		<Unit filename="/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/page.h">
+		<Unit filename="/Users/NamiKim/Desktop/cs hw/cs372/hw5/shapes.h">
 			<Option target="cpsMain"/>
 			<Option target="cpsTests"/>
 		</Unit>
-		<Unit filename="/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/shapes.cpp">
-			<Option target="cpsMain"/>
-			<Option target="cpsTests"/>
-		</Unit>
-		<Unit filename="/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/shapes.h">
-			<Option target="cpsMain"/>
-			<Option target="cpsTests"/>
-		</Unit>
-		<Unit filename="/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/CMakeLists.txt">
+		<Unit filename="/Users/NamiKim/Desktop/cs hw/cs372/hw5/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

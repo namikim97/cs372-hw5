@@ -50,6 +50,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/cpsMain.dir/DependInfo.cmake"
-  "CMakeFiles/cpsTests.dir/DependInfo.cmake"
+  "CMakeFiles/hw5.dir/DependInfo.cmake"
   )

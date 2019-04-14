@@ -26,16 +26,16 @@ void Shape::setWidth(double width)
     _width = width;
 }
 
-string Shape::drawShape(const Shape &s, int x, int y)
-{
-    string retPSCode;
-//TODO: The problem with heights for polygons with odd numbers of sides is in the to_string(y) below.
-    retPSCode = "gsave\n" + to_string(x) + " " + to_string(y) +
-                " translate\n" + s.getPostScriptCode() + 
-                "\nstroke\ngrestore\n";
-
-    return retPSCode;
-}
+//string Shape::drawShape(const Shape &s, int x, int y)
+//{
+//    string retPSCode;
+////TODO: The problem with heights for polygons with odd numbers of sides is in the to_string(y) below.
+//    retPSCode = "gsave\n" + to_string(x) + " " + to_string(y) +
+//                " translate\n" + s.getPostScriptCode() +
+//                "\nstroke\ngrestore\n";
+//
+//    return retPSCode;
+//}
 
 
 Circle::Circle(double radius)
@@ -50,7 +50,7 @@ double Circle::getRadius() const
     return _radius;
 }
 
-string Circle::getPostScriptCode() const
+string Circle::getPostScriptCode()
 {
     string radius = to_string(getRadius());
     string retPSCode = "newpath\n"
@@ -156,7 +156,7 @@ double Polygon::getInnerAngle() const
 }
 
 
-string Polygon::getPostScriptCode() const
+string Polygon::getPostScriptCode()
 {
     double sideminusone = getNumOfSides() - 1.0;
     string SideMinusOne = to_string(sideminusone);
@@ -190,7 +190,7 @@ Rectangle::Rectangle(double width, double height) {
     setHeight(height);
 }
 
-string Rectangle::getPostScriptCode() const {
+string Rectangle::getPostScriptCode() {
     // double halfWidth = getWidth()/2, halfHeight = getHeight()/2;
     // string originX = "x " + to_string(halfWidth) + " sub";
     // string originY = "y " + to_string(halfHeight) + " sub";
@@ -221,57 +221,3 @@ string Rectangle::getPostScriptCode() const {
 
     return retPSCode;
 }
-
-RainbowBall::RainbowBall(double radius, double r, double g, double b): _radius(radius), _r{r}, _g{g}, _b{b} {
-    setHeight(_radius * 2.0);
-    setWidth(_radius * 2.0);
-}
-
-string RainbowBall::getPostScriptCode() const {
-    string retPsCode = "newpath\n"
-                       "/s " + to_string((int)(_radius/2.0)) + " def\n" +
-                       "/r1 " + to_string(_r) + " def\n" +
-                       "/g1 " + to_string(_g) + " def\n" +
-                       "/b1 " + to_string(_b) + " def\n" +
-                       "gsave\n"
-                       "0 " + to_string((int)(_radius)) + " translate\n"
-                       "0 30 360 {\n"
-                       "        /r1 r1 0.1 add def\n"
-                       "        g1 g1 0.1 sub def\n"
-                       "        b1 b1 0.05 add def\n"
-                       "        gsave\n"
-                       "        rotate\n"
-                       "        r1 g1 b1 setrgbcolor\n"
-                       "        s 3 s 0 360 arc closepath stroke\n"
-                       "        grestore\n"
-                       "} for\n"
-                       "grestore\n";
-
-    return retPsCode;
-}
-
-
-Spacer::Spacer(double width, double height) {
-    setWidth(width);
-    setHeight(height);
-}
-
-string Spacer::getPostScriptCode() const {
-    double halfWidth = getWidth()/2.0, halfHeight = getHeight()/2.0;
-    string originX = "x " + to_string(halfWidth) + " sub";
-    string originY = "y " + to_string(halfHeight) + " sub";
-    string strWidth = to_string(getWidth()), strHeight = to_string(getHeight());
-    string originXWidthAdd = originX + " " + strWidth + " add ";
-    string originYHeightAdd = originY + " " + strHeight + " add ";
-
-    string PostScriptCode = "newpath\n" +
-                            originX + " " + originY + " moveto\n" +
-                            originXWidthAdd + originY + " lineto\n" +
-                            originXWidthAdd + originYHeightAdd + " lineto\n" +
-                            originX + " " + originYHeightAdd + " lineto\n" +
-                            "closepath\n";
-
-    return PostScriptCode;
-}
-
-

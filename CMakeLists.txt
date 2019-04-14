@@ -1,24 +1,16 @@
-cmake_minimum_required(VERSION 3.0)
-project(cpsMain)
-project(cpsTests)
+cmake_minimum_required(VERSION 3.13)
+project(hw5)
 
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 14)
 
 include_directories(.)
 
-# tests
-add_executable(cpsTests
-        catch.hpp
-        cpsTests.cpp
-        shapes.cpp shapes.h
-        compound.cpp compound.h
-        page.cpp page.h
-        human.cpp human.h)
-
-# main
-add_executable(cpsMain
-        cps.cpp
-        shapes.cpp shapes.h
-        compound.cpp compound.h
-        page.cpp page.h
-        human.cpp human.h)
+add_executable(hw5
+    compound.cpp
+    compound.h
+    cps.cpp
+    page.cpp
+    page.h
+    README.md
+    shapes.cpp
+    shapes.h)

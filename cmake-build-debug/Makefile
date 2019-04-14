@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps"
+CMAKE_SOURCE_DIR = "/Users/NamiKim/Desktop/cs hw/cs372/hw5"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/cmake-build-debug"
+CMAKE_BINARY_DIR = "/Users/NamiKim/Desktop/cs hw/cs372/hw5/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/cmake-build-debug/CMakeFiles" "/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/cmake-build-debug/CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/NamiKim/Desktop/cs hw/cs372/hw5/cmake-build-debug/CMakeFiles" "/Users/NamiKim/Desktop/cs hw/cs372/hw5/cmake-build-debug/CMakeFiles/progress.marks"
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/cmake-build-debug/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/NamiKim/Desktop/cs hw/cs372/hw5/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -111,30 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named cpsMain
+# Target rules for targets named hw5
 
 # Build rule for target.
-cpsMain: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 cpsMain
-.PHONY : cpsMain
+hw5: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hw5
+.PHONY : hw5
 
 # fast build rule for target.
-cpsMain/fast:
-	$(MAKE) -f CMakeFiles/cpsMain.dir/build.make CMakeFiles/cpsMain.dir/build
-.PHONY : cpsMain/fast
-
-#=============================================================================
-# Target rules for targets named cpsTests
-
-# Build rule for target.
-cpsTests: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 cpsTests
-.PHONY : cpsTests
-
-# fast build rule for target.
-cpsTests/fast:
-	$(MAKE) -f CMakeFiles/cpsTests.dir/build.make CMakeFiles/cpsTests.dir/build
-.PHONY : cpsTests/fast
+hw5/fast:
+	$(MAKE) -f CMakeFiles/hw5.dir/build.make CMakeFiles/hw5.dir/build
+.PHONY : hw5/fast
 
 compound.o: compound.cpp.o
 
@@ -142,8 +129,7 @@ compound.o: compound.cpp.o
 
 # target to build an object file
 compound.cpp.o:
-	$(MAKE) -f CMakeFiles/cpsMain.dir/build.make CMakeFiles/cpsMain.dir/compound.cpp.o
-	$(MAKE) -f CMakeFiles/cpsTests.dir/build.make CMakeFiles/cpsTests.dir/compound.cpp.o
+	$(MAKE) -f CMakeFiles/hw5.dir/build.make CMakeFiles/hw5.dir/compound.cpp.o
 .PHONY : compound.cpp.o
 
 compound.i: compound.cpp.i
@@ -152,8 +138,7 @@ compound.i: compound.cpp.i
 
 # target to preprocess a source file
 compound.cpp.i:
-	$(MAKE) -f CMakeFiles/cpsMain.dir/build.make CMakeFiles/cpsMain.dir/compound.cpp.i
-	$(MAKE) -f CMakeFiles/cpsTests.dir/build.make CMakeFiles/cpsTests.dir/compound.cpp.i
+	$(MAKE) -f CMakeFiles/hw5.dir/build.make CMakeFiles/hw5.dir/compound.cpp.i
 .PHONY : compound.cpp.i
 
 compound.s: compound.cpp.s
@@ -162,8 +147,7 @@ compound.s: compound.cpp.s
 
 # target to generate assembly for a file
 compound.cpp.s:
-	$(MAKE) -f CMakeFiles/cpsMain.dir/build.make CMakeFiles/cpsMain.dir/compound.cpp.s
-	$(MAKE) -f CMakeFiles/cpsTests.dir/build.make CMakeFiles/cpsTests.dir/compound.cpp.s
+	$(MAKE) -f CMakeFiles/hw5.dir/build.make CMakeFiles/hw5.dir/compound.cpp.s
 .PHONY : compound.cpp.s
 
 cps.o: cps.cpp.o
@@ -172,7 +156,7 @@ cps.o: cps.cpp.o
 
 # target to build an object file
 cps.cpp.o:
-	$(MAKE) -f CMakeFiles/cpsMain.dir/build.make CMakeFiles/cpsMain.dir/cps.cpp.o
+	$(MAKE) -f CMakeFiles/hw5.dir/build.make CMakeFiles/hw5.dir/cps.cpp.o
 .PHONY : cps.cpp.o
 
 cps.i: cps.cpp.i
@@ -181,7 +165,7 @@ cps.i: cps.cpp.i
 
 # target to preprocess a source file
 cps.cpp.i:
-	$(MAKE) -f CMakeFiles/cpsMain.dir/build.make CMakeFiles/cpsMain.dir/cps.cpp.i
+	$(MAKE) -f CMakeFiles/hw5.dir/build.make CMakeFiles/hw5.dir/cps.cpp.i
 .PHONY : cps.cpp.i
 
 cps.s: cps.cpp.s
@@ -190,65 +174,8 @@ cps.s: cps.cpp.s
 
 # target to generate assembly for a file
 cps.cpp.s:
-	$(MAKE) -f CMakeFiles/cpsMain.dir/build.make CMakeFiles/cpsMain.dir/cps.cpp.s
+	$(MAKE) -f CMakeFiles/hw5.dir/build.make CMakeFiles/hw5.dir/cps.cpp.s
 .PHONY : cps.cpp.s
-
-cpsTests.o: cpsTests.cpp.o
-
-.PHONY : cpsTests.o
-
-# target to build an object file
-cpsTests.cpp.o:
-	$(MAKE) -f CMakeFiles/cpsTests.dir/build.make CMakeFiles/cpsTests.dir/cpsTests.cpp.o
-.PHONY : cpsTests.cpp.o
-
-cpsTests.i: cpsTests.cpp.i
-
-.PHONY : cpsTests.i
-
-# target to preprocess a source file
-cpsTests.cpp.i:
-	$(MAKE) -f CMakeFiles/cpsTests.dir/build.make CMakeFiles/cpsTests.dir/cpsTests.cpp.i
-.PHONY : cpsTests.cpp.i
-
-cpsTests.s: cpsTests.cpp.s
-
-.PHONY : cpsTests.s
-
-# target to generate assembly for a file
-cpsTests.cpp.s:
-	$(MAKE) -f CMakeFiles/cpsTests.dir/build.make CMakeFiles/cpsTests.dir/cpsTests.cpp.s
-.PHONY : cpsTests.cpp.s
-
-human.o: human.cpp.o
-
-.PHONY : human.o
-
-# target to build an object file
-human.cpp.o:
-	$(MAKE) -f CMakeFiles/cpsMain.dir/build.make CMakeFiles/cpsMain.dir/human.cpp.o
-	$(MAKE) -f CMakeFiles/cpsTests.dir/build.make CMakeFiles/cpsTests.dir/human.cpp.o
-.PHONY : human.cpp.o
-
-human.i: human.cpp.i
-
-.PHONY : human.i
-
-# target to preprocess a source file
-human.cpp.i:
-	$(MAKE) -f CMakeFiles/cpsMain.dir/build.make CMakeFiles/cpsMain.dir/human.cpp.i
-	$(MAKE) -f CMakeFiles/cpsTests.dir/build.make CMakeFiles/cpsTests.dir/human.cpp.i
-.PHONY : human.cpp.i
-
-human.s: human.cpp.s
-
-.PHONY : human.s
-
-# target to generate assembly for a file
-human.cpp.s:
-	$(MAKE) -f CMakeFiles/cpsMain.dir/build.make CMakeFiles/cpsMain.dir/human.cpp.s
-	$(MAKE) -f CMakeFiles/cpsTests.dir/build.make CMakeFiles/cpsTests.dir/human.cpp.s
-.PHONY : human.cpp.s
 
 page.o: page.cpp.o
 
@@ -256,8 +183,7 @@ page.o: page.cpp.o
 
 # target to build an object file
 page.cpp.o:
-	$(MAKE) -f CMakeFiles/cpsMain.dir/build.make CMakeFiles/cpsMain.dir/page.cpp.o
-	$(MAKE) -f CMakeFiles/cpsTests.dir/build.make CMakeFiles/cpsTests.dir/page.cpp.o
+	$(MAKE) -f CMakeFiles/hw5.dir/build.make CMakeFiles/hw5.dir/page.cpp.o
 .PHONY : page.cpp.o
 
 page.i: page.cpp.i
@@ -266,8 +192,7 @@ page.i: page.cpp.i
 
 # target to preprocess a source file
 page.cpp.i:
-	$(MAKE) -f CMakeFiles/cpsMain.dir/build.make CMakeFiles/cpsMain.dir/page.cpp.i
-	$(MAKE) -f CMakeFiles/cpsTests.dir/build.make CMakeFiles/cpsTests.dir/page.cpp.i
+	$(MAKE) -f CMakeFiles/hw5.dir/build.make CMakeFiles/hw5.dir/page.cpp.i
 .PHONY : page.cpp.i
 
 page.s: page.cpp.s
@@ -276,8 +201,7 @@ page.s: page.cpp.s
 
 # target to generate assembly for a file
 page.cpp.s:
-	$(MAKE) -f CMakeFiles/cpsMain.dir/build.make CMakeFiles/cpsMain.dir/page.cpp.s
-	$(MAKE) -f CMakeFiles/cpsTests.dir/build.make CMakeFiles/cpsTests.dir/page.cpp.s
+	$(MAKE) -f CMakeFiles/hw5.dir/build.make CMakeFiles/hw5.dir/page.cpp.s
 .PHONY : page.cpp.s
 
 shapes.o: shapes.cpp.o
@@ -286,8 +210,7 @@ shapes.o: shapes.cpp.o
 
 # target to build an object file
 shapes.cpp.o:
-	$(MAKE) -f CMakeFiles/cpsMain.dir/build.make CMakeFiles/cpsMain.dir/shapes.cpp.o
-	$(MAKE) -f CMakeFiles/cpsTests.dir/build.make CMakeFiles/cpsTests.dir/shapes.cpp.o
+	$(MAKE) -f CMakeFiles/hw5.dir/build.make CMakeFiles/hw5.dir/shapes.cpp.o
 .PHONY : shapes.cpp.o
 
 shapes.i: shapes.cpp.i
@@ -296,8 +219,7 @@ shapes.i: shapes.cpp.i
 
 # target to preprocess a source file
 shapes.cpp.i:
-	$(MAKE) -f CMakeFiles/cpsMain.dir/build.make CMakeFiles/cpsMain.dir/shapes.cpp.i
-	$(MAKE) -f CMakeFiles/cpsTests.dir/build.make CMakeFiles/cpsTests.dir/shapes.cpp.i
+	$(MAKE) -f CMakeFiles/hw5.dir/build.make CMakeFiles/hw5.dir/shapes.cpp.i
 .PHONY : shapes.cpp.i
 
 shapes.s: shapes.cpp.s
@@ -306,8 +228,7 @@ shapes.s: shapes.cpp.s
 
 # target to generate assembly for a file
 shapes.cpp.s:
-	$(MAKE) -f CMakeFiles/cpsMain.dir/build.make CMakeFiles/cpsMain.dir/shapes.cpp.s
-	$(MAKE) -f CMakeFiles/cpsTests.dir/build.make CMakeFiles/cpsTests.dir/shapes.cpp.s
+	$(MAKE) -f CMakeFiles/hw5.dir/build.make CMakeFiles/hw5.dir/shapes.cpp.s
 .PHONY : shapes.cpp.s
 
 # Help Target
@@ -316,22 +237,15 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... cpsMain"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... cpsTests"
+	@echo "... hw5"
 	@echo "... compound.o"
 	@echo "... compound.i"
 	@echo "... compound.s"
 	@echo "... cps.o"
 	@echo "... cps.i"
 	@echo "... cps.s"
-	@echo "... cpsTests.o"
-	@echo "... cpsTests.i"
-	@echo "... cpsTests.s"
-	@echo "... human.o"
-	@echo "... human.i"
-	@echo "... human.s"
 	@echo "... page.o"
 	@echo "... page.i"
 	@echo "... page.s"

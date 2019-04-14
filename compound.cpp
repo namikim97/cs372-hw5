@@ -5,13 +5,15 @@
 #include <string>
 using std::string;
 using std::to_string;
+#include <utility>
+using std::move;
 
 
-Rotated::Rotated(const Shape &s, double rotation):_rotation(rotation),
-                                                 _postScriptCode(s.getPostScriptCode())
+Rotated::Rotated(const Shape &s, double rotation):_rotation(rotation)
 {
     const double radians = (_rotation * 2.0 * M_PI)/360.0;
 
+    // _postScriptCode = s.getPostScriptCode();
     _origWidth = s.getWidth();
     _origHeight = s.getHeight();
 
@@ -19,7 +21,7 @@ Rotated::Rotated(const Shape &s, double rotation):_rotation(rotation),
     setHeight(abs(_origWidth * sin(radians) + _origHeight * cos(radians)));
 }
 
-string Rotated::getPostScriptCode() const
+string Rotated::getPostScriptCode() 
 {
     string retPSCode;
 
@@ -30,14 +32,14 @@ string Rotated::getPostScriptCode() const
 
 Scaled::Scaled(const Shape &s, double horScale, double verScale)
                 :_horScale(horScale), _verScale(verScale), 
-                _origWidth(s.getWidth()), _origHeight(s.getHeight()),
-                _postScriptCode(s.getPostScriptCode())
+                _origWidth(s.getWidth()), _origHeight(s.getHeight())
 {
+    // _postScriptCode = s.getPostScriptCode())
     setWidth(_origWidth * horScale);
     setHeight(_origHeight * verScale);
 }
 
-string Scaled::getPostScriptCode() const
+string Scaled::getPostScriptCode() 
 {
     string retPSCode;
 
@@ -47,117 +49,88 @@ string Scaled::getPostScriptCode() const
     return retPSCode;
 }
 
-Layered::Layered(std::initializer_list<shared_ptr<Shape>> Shapes)
+CompositeShape::CompositeShape(std::vector<std::shared_ptr<Shape>> Shapes)
 {
-    for(const auto &i : Shapes)
+    Shapes = _shapes;
+}
+
+string CompositeShape::getPostScriptCode()
+{
+    string retPSCode = "";
+
+    for (int i=0; i<_shapes.size(); ++i)
     {
-        if(getWidth() < i->getWidth())
-        {
-            setWidth(i->getWidth());
-        }
-        if(getHeight() < i->getHeight())
-        {
-            setHeight(i->getHeight());
-        }
-        else
-        {}
+        retPSCode += moveToFirstPosition(_shapes[i]);
+        retPSCode += _shapes[i] -> getPostScriptCode();
+        retPSCode += moveToFirstPosition(_shapes[i]);
     }
 
-    std::vector<shared_ptr<Shape>> vecShapes(Shapes.begin(), Shapes.end());
-
-    std::string retPSCode;
-    double xCenterCoord = getWidth() / 2.0;
-    double yCenterCoord = getHeight() / 2.0;
-    //xCenterCoord += 144;
-    //yCenterCoord += 144;
-
-    for(int i=0; i<vecShapes.size(); ++i)
-    {   
-        yCenterCoord -= vecShapes[i]->getHeight() / 2.0;
-        xCenterCoord -= vecShapes[i]->getWidth() / 2.0;
-        retPSCode += drawShape(*vecShapes[i], 0, 0);
-    }
-
-    _postScriptCode = retPSCode;
+    return retPSCode;
 }
 
-string Layered::getPostScriptCode() const
+Layered::Layered(std::vector<std::shared_ptr<Shape>> listOfShapes):CompositeShape(listOfShapes)
 {
-    return _postScriptCode;
-}
+    layeredShapes = move(listOfShapes);
+    _height = 0;
+    _width = 0;
 
-Vertical::Vertical(std::initializer_list<shared_ptr<Shape>> Shapes)
-{
-    for(const auto &i : Shapes)
+    for(int i=0; i<layeredShapes.size(); ++i)
     {
-        if(getWidth() < i->getWidth())
+        if(_width < layeredShapes[i]->_width)
         {
-            setWidth(i->getWidth());
+            _width = layeredShapes[i]->_width;
         }
-        if(getHeight() < i->getHeight())
+        if(_height < layeredShapes[i]->_height)
         {
-            setHeight(i->getHeight());
+            _height = layeredShapes[i]->_height;
         }
-        else
-        {}
     }
-
-    std::vector<shared_ptr<Shape>> vecShapes(Shapes.begin(), Shapes.end());
-    std::string retPSCode;
-    double yCenterCoord = (vecShapes[0]->getHeight()/2.0);
-    for(int i=0; i<vecShapes.size(); ++i)
-    {
-        if (i > 0) {
-            yCenterCoord -= ((vecShapes[i]->getHeight() / 2.0) + (vecShapes[i - 1]->getHeight() / 2.0));
-
-        }
-        retPSCode += drawShape(*vecShapes[i], 0, (int)yCenterCoord);
-    }
-    _postScriptCode = retPSCode;
 }
 
-string Vertical::getPostScriptCode() const
+string Layered::moveToFirstPosition(std::shared_ptr<Shape> currentShape)
 {
-    return _postScriptCode;
+    return "0 0 translate\n";
 }
 
-Horizontal::Horizontal(std::initializer_list<shared_ptr<Shape>> Shapes)
+Vertical::Vertical(std::vector<std::shared_ptr<Shape>> listOfShapes):CompositeShape(listOfShapes)
 {
-    for(const auto &i : Shapes)
-    {
-        if(getWidth() < i->getWidth())
-        {
-            setWidth(i->getWidth());
-        }
-        if(getHeight() < i->getHeight())
-        {
-            setHeight(i->getHeight());
-        }
-        else
-        {}
-    }
+    verticalShapes = move(listOfShapes);
+    _height = 0;
+    _width = 0;
 
-    std::vector<shared_ptr<Shape>> vecShapes(Shapes.begin(), Shapes.end());
-    std::string retPSCode;
-    double xCenterCoord = (vecShapes[0]->getWidth()/2.0);
-    for(int i=0; i<vecShapes.size(); ++i)
+    for(int i=0; i<verticalShapes.size(); ++i)
     {
-        if (i > 0) {
-            xCenterCoord -= ((vecShapes[i]->getWidth() / 2.0) + (vecShapes[i - 1]->getWidth() / 2.0));
-
+        _height += move((verticalShapes[i]->_height) + 1);
+        if(_width < verticalShapes[i]->_width)
+        {
+            _width = verticalShapes[i]->_width;
         }
-        retPSCode += drawShape(*vecShapes[i], (int)xCenterCoord, 0);
     }
-    _postScriptCode = retPSCode;
 }
 
-string Horizontal::getPostScriptCode() const
+string Vertical::moveToFirstPosition(std::shared_ptr<Shape> currentShape)
 {
-    return _postScriptCode;
+    return "0 " + to_string(currentShape->_height / 2) + " translate\n";
 }
 
+Horizontal::Horizontal(std::vector<std::shared_ptr<Shape>> listOfShapes):CompositeShape(listOfShapes)
+{
+    horizontalShapes = move(listOfShapes);
+    _height = 0;
+    _width = 0;
 
+    for(int i=0; i<horizontalShapes.size(); ++i)
+    {
+        _width += move((horizontalShapes[i]->_width) +1);
+        if(_height < horizontalShapes[i]->_height)
+        {
+            _height = horizontalShapes[i]->_height;
+        }
+    }
+}
 
-
-
+string Horizontal::moveToFirstPosition(std::shared_ptr<Shape> currentShape)
+{
+    return to_string(currentShape->_width / 2) + " 0 translate\n";
+}
 

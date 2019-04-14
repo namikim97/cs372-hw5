@@ -5,17 +5,6 @@ CMakeFiles/cpsMain.dir/compound.cpp.o: ../compound.cpp
 CMakeFiles/cpsMain.dir/compound.cpp.o: ../compound.h
 CMakeFiles/cpsMain.dir/compound.cpp.o: ../shapes.h
 
-CMakeFiles/cpsMain.dir/cps.cpp.o: ../compound.h
-CMakeFiles/cpsMain.dir/cps.cpp.o: ../cps.cpp
-CMakeFiles/cpsMain.dir/cps.cpp.o: ../human.h
-CMakeFiles/cpsMain.dir/cps.cpp.o: ../page.h
-CMakeFiles/cpsMain.dir/cps.cpp.o: ../shapes.h
-
-CMakeFiles/cpsMain.dir/human.cpp.o: ../compound.h
-CMakeFiles/cpsMain.dir/human.cpp.o: ../human.cpp
-CMakeFiles/cpsMain.dir/human.cpp.o: ../human.h
-CMakeFiles/cpsMain.dir/human.cpp.o: ../shapes.h
-
 CMakeFiles/cpsMain.dir/page.cpp.o: ../page.cpp
 CMakeFiles/cpsMain.dir/page.cpp.o: ../page.h
 CMakeFiles/cpsMain.dir/page.cpp.o: ../shapes.h

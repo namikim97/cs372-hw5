@@ -34,10 +34,10 @@ class Shape
 public:
     virtual double getHeight() const;
     virtual double getWidth() const;
-    virtual std::string getPostScriptCode() const = 0;
+    virtual std::string getPostScriptCode() = 0;
     virtual ~Shape() = default;
 
-private:
+public:
     double _height;
     double _width;
 
@@ -55,7 +55,7 @@ class Circle : public Shape
 public:
     explicit Circle(double radius);
     double getRadius() const;
-    std::string getPostScriptCode() const override;
+    std::string getPostScriptCode() override;
 
 private:
     double _radius;
@@ -77,7 +77,7 @@ public:
     double getTriHypot() const;
     double getInnerAngle() const;
 
-    std::string getPostScriptCode() const override;
+    std::string getPostScriptCode() override;
 
 private:
     int _numOfSides;
@@ -92,16 +92,7 @@ class Rectangle : public Shape
 {
 public:
     Rectangle(double, double);
-    string getPostScriptCode() const override;
-
-};
-
-
-class Spacer : public Shape
-{
-public:
-    Spacer(double, double);
-    string getPostScriptCode() const override;
+    string getPostScriptCode() override;
 
 };
 
@@ -118,20 +109,6 @@ class Triangle : public Polygon
 public:
     explicit Triangle(double sideLength): Polygon(3, sideLength){}; //3 is an int,# of sides in polygon
 };
-
-class RainbowBall : public Shape
-{
-public:
-    explicit RainbowBall(double radius, double r, double g, double b);
-    string getPostScriptCode() const override;
-
-private:
-    double _r;
-    double _g;
-    double _b;
-    double _radius;
-};
-
 
 
 #endif //CPS_SHAPES_H

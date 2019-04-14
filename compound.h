@@ -18,7 +18,7 @@ class Rotated : public Shape
 {
 public:
     Rotated(const Shape &s, double rotation);
-    std::string getPostScriptCode() const override;
+    std::string getPostScriptCode() override;
 
 private:
     double _origWidth;
@@ -31,7 +31,7 @@ class Scaled : public Shape
 {
 public:
     Scaled(const Shape &s, double horScale, double verScale);
-    std::string getPostScriptCode() const override;
+    std::string getPostScriptCode() override;
 
 private:
     double _origWidth;
@@ -41,38 +41,47 @@ private:
     std::string _postScriptCode;
 };
 
-class Layered : public Shape
+class CompositeShape : public Shape
 {
 public:
-    Layered(std::initializer_list<shared_ptr<Shape>> Shapes);
+    CompositeShape(std::vector<std::shared_ptr<Shape>> Shapes);
+    std::string getPostScriptCode() override;
 
-    string getPostScriptCode() const override;
+protected:
+    virtual std::string moveToFirstPosition(std::shared_ptr<Shape> currentShape) = 0;
+    std::vector<std::shared_ptr<Shape>> _shapes;
 
-private:
-    std::string _postScriptCode;
 };
 
-
-
-
-class Vertical : public Shape
+class Layered : public CompositeShape
 {
 public:
-    Vertical(std::initializer_list<shared_ptr<Shape>> Shapes);
+    Layered(std::vector<std::shared_ptr<Shape>> listOfShapes);
+    std::string moveToFirstPosition(std::shared_ptr<Shape> currentShape) override;
 
-    string getPostScriptCode() const override;
 private:
-    std::string _postScriptCode;
+    std::vector<std::shared_ptr<Shape>> layeredShapes;
 };
 
-class Horizontal : public Shape
+class Vertical : public CompositeShape
 {
 public:
-    Horizontal(std::initializer_list<shared_ptr<Shape>> Shapes);
+    Vertical(std::vector<std::shared_ptr<Shape>> listOfShapes);
+    std::string moveToFirstPosition(std::shared_ptr<Shape> currentShape) override;
 
-    string getPostScriptCode() const override;
 private:
-    std::string _postScriptCode;
+    std::vector<std::shared_ptr<Shape>> verticalShapes;
 };
+
+class Horizontal : public CompositeShape
+{
+public:
+    Horizontal(std::vector<std::shared_ptr<Shape>> listOfShapes);
+    std::string moveToFirstPosition(std::shared_ptr<Shape> currentShape) override;
+
+private:
+    std::vector<std::shared_ptr<Shape>> horizontalShapes;
+};
+
 
 #endif //CPS_COMPOUND_H

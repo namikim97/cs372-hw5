@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -std=gnu++1z
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I"/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/." 
+CXX_INCLUDES = -I"/Users/NamiKim/Desktop/cs hw/cs372/hw5/." 
 

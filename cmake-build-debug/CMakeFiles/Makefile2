@@ -59,82 +59,45 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps"
+CMAKE_SOURCE_DIR = "/Users/NamiKim/Desktop/cs hw/cs372/hw5"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/cmake-build-debug"
+CMAKE_BINARY_DIR = "/Users/NamiKim/Desktop/cs hw/cs372/hw5/cmake-build-debug"
 
 #=============================================================================
-# Target rules for target CMakeFiles/cpsMain.dir
+# Target rules for target CMakeFiles/hw5.dir
 
 # All Build rule for target.
-CMakeFiles/cpsMain.dir/all:
-	$(MAKE) -f CMakeFiles/cpsMain.dir/build.make CMakeFiles/cpsMain.dir/depend
-	$(MAKE) -f CMakeFiles/cpsMain.dir/build.make CMakeFiles/cpsMain.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/cmake-build-debug/CMakeFiles" --progress-num=1,2,3,4,5,6 "Built target cpsMain"
-.PHONY : CMakeFiles/cpsMain.dir/all
+CMakeFiles/hw5.dir/all:
+	$(MAKE) -f CMakeFiles/hw5.dir/build.make CMakeFiles/hw5.dir/depend
+	$(MAKE) -f CMakeFiles/hw5.dir/build.make CMakeFiles/hw5.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/NamiKim/Desktop/cs hw/cs372/hw5/cmake-build-debug/CMakeFiles" --progress-num=1,2,3,4,5 "Built target hw5"
+.PHONY : CMakeFiles/hw5.dir/all
 
 # Include target in all.
-all: CMakeFiles/cpsMain.dir/all
+all: CMakeFiles/hw5.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/cpsMain.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/cmake-build-debug/CMakeFiles" 6
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/cpsMain.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/cmake-build-debug/CMakeFiles" 0
-.PHONY : CMakeFiles/cpsMain.dir/rule
+CMakeFiles/hw5.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/NamiKim/Desktop/cs hw/cs372/hw5/cmake-build-debug/CMakeFiles" 5
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/hw5.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/NamiKim/Desktop/cs hw/cs372/hw5/cmake-build-debug/CMakeFiles" 0
+.PHONY : CMakeFiles/hw5.dir/rule
 
 # Convenience name for target.
-cpsMain: CMakeFiles/cpsMain.dir/rule
+hw5: CMakeFiles/hw5.dir/rule
 
-.PHONY : cpsMain
-
-# clean rule for target.
-CMakeFiles/cpsMain.dir/clean:
-	$(MAKE) -f CMakeFiles/cpsMain.dir/build.make CMakeFiles/cpsMain.dir/clean
-.PHONY : CMakeFiles/cpsMain.dir/clean
+.PHONY : hw5
 
 # clean rule for target.
-clean: CMakeFiles/cpsMain.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/cpsTests.dir
-
-# All Build rule for target.
-CMakeFiles/cpsTests.dir/all:
-	$(MAKE) -f CMakeFiles/cpsTests.dir/build.make CMakeFiles/cpsTests.dir/depend
-	$(MAKE) -f CMakeFiles/cpsTests.dir/build.make CMakeFiles/cpsTests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/cmake-build-debug/CMakeFiles" --progress-num=7,8,9,10,11,12 "Built target cpsTests"
-.PHONY : CMakeFiles/cpsTests.dir/all
-
-# Include target in all.
-all: CMakeFiles/cpsTests.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/cpsTests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/cmake-build-debug/CMakeFiles" 6
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/cpsTests.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/cmake-build-debug/CMakeFiles" 0
-.PHONY : CMakeFiles/cpsTests.dir/rule
-
-# Convenience name for target.
-cpsTests: CMakeFiles/cpsTests.dir/rule
-
-.PHONY : cpsTests
+CMakeFiles/hw5.dir/clean:
+	$(MAKE) -f CMakeFiles/hw5.dir/build.make CMakeFiles/hw5.dir/clean
+.PHONY : CMakeFiles/hw5.dir/clean
 
 # clean rule for target.
-CMakeFiles/cpsTests.dir/clean:
-	$(MAKE) -f CMakeFiles/cpsTests.dir/build.make CMakeFiles/cpsTests.dir/clean
-.PHONY : CMakeFiles/cpsTests.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/cpsTests.dir/clean
+clean: CMakeFiles/hw5.dir/clean
 
 .PHONY : clean
 

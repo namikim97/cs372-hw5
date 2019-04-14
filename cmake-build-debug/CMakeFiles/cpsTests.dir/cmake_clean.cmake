@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/cpsTests.dir/cpsTests.cpp.o"
   "CMakeFiles/cpsTests.dir/shapes.cpp.o"
   "CMakeFiles/cpsTests.dir/compound.cpp.o"
   "CMakeFiles/cpsTests.dir/page.cpp.o"
-  "CMakeFiles/cpsTests.dir/human.cpp.o"
   "cpsTests.pdb"
   "cpsTests"
 )

@@ -43,10 +43,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps"
+CMAKE_SOURCE_DIR = "/Users/NamiKim/Desktop/cs hw/cs372/hw5"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/cmake-build-debug"
+CMAKE_BINARY_DIR = "/Users/NamiKim/Desktop/cs hw/cs372/hw5/cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/cpsTests.dir/depend.make
@@ -57,90 +57,60 @@ include CMakeFiles/cpsTests.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/cpsTests.dir/flags.make
 
-CMakeFiles/cpsTests.dir/cpsTests.cpp.o: CMakeFiles/cpsTests.dir/flags.make
-CMakeFiles/cpsTests.dir/cpsTests.cpp.o: ../cpsTests.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cpsTests.dir/cpsTests.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cpsTests.dir/cpsTests.cpp.o -c "/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/cpsTests.cpp"
-
-CMakeFiles/cpsTests.dir/cpsTests.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpsTests.dir/cpsTests.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/cpsTests.cpp" > CMakeFiles/cpsTests.dir/cpsTests.cpp.i
-
-CMakeFiles/cpsTests.dir/cpsTests.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpsTests.dir/cpsTests.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/cpsTests.cpp" -o CMakeFiles/cpsTests.dir/cpsTests.cpp.s
-
 CMakeFiles/cpsTests.dir/shapes.cpp.o: CMakeFiles/cpsTests.dir/flags.make
 CMakeFiles/cpsTests.dir/shapes.cpp.o: ../shapes.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/cpsTests.dir/shapes.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cpsTests.dir/shapes.cpp.o -c "/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/shapes.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/NamiKim/Desktop/cs hw/cs372/hw5/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cpsTests.dir/shapes.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cpsTests.dir/shapes.cpp.o -c "/Users/NamiKim/Desktop/cs hw/cs372/hw5/shapes.cpp"
 
 CMakeFiles/cpsTests.dir/shapes.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpsTests.dir/shapes.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/shapes.cpp" > CMakeFiles/cpsTests.dir/shapes.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/NamiKim/Desktop/cs hw/cs372/hw5/shapes.cpp" > CMakeFiles/cpsTests.dir/shapes.cpp.i
 
 CMakeFiles/cpsTests.dir/shapes.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpsTests.dir/shapes.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/shapes.cpp" -o CMakeFiles/cpsTests.dir/shapes.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/NamiKim/Desktop/cs hw/cs372/hw5/shapes.cpp" -o CMakeFiles/cpsTests.dir/shapes.cpp.s
 
 CMakeFiles/cpsTests.dir/compound.cpp.o: CMakeFiles/cpsTests.dir/flags.make
 CMakeFiles/cpsTests.dir/compound.cpp.o: ../compound.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/cpsTests.dir/compound.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cpsTests.dir/compound.cpp.o -c "/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/compound.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/NamiKim/Desktop/cs hw/cs372/hw5/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/cpsTests.dir/compound.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cpsTests.dir/compound.cpp.o -c "/Users/NamiKim/Desktop/cs hw/cs372/hw5/compound.cpp"
 
 CMakeFiles/cpsTests.dir/compound.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpsTests.dir/compound.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/compound.cpp" > CMakeFiles/cpsTests.dir/compound.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/NamiKim/Desktop/cs hw/cs372/hw5/compound.cpp" > CMakeFiles/cpsTests.dir/compound.cpp.i
 
 CMakeFiles/cpsTests.dir/compound.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpsTests.dir/compound.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/compound.cpp" -o CMakeFiles/cpsTests.dir/compound.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/NamiKim/Desktop/cs hw/cs372/hw5/compound.cpp" -o CMakeFiles/cpsTests.dir/compound.cpp.s
 
 CMakeFiles/cpsTests.dir/page.cpp.o: CMakeFiles/cpsTests.dir/flags.make
 CMakeFiles/cpsTests.dir/page.cpp.o: ../page.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/cpsTests.dir/page.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cpsTests.dir/page.cpp.o -c "/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/page.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/NamiKim/Desktop/cs hw/cs372/hw5/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/cpsTests.dir/page.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cpsTests.dir/page.cpp.o -c "/Users/NamiKim/Desktop/cs hw/cs372/hw5/page.cpp"
 
 CMakeFiles/cpsTests.dir/page.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpsTests.dir/page.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/page.cpp" > CMakeFiles/cpsTests.dir/page.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/NamiKim/Desktop/cs hw/cs372/hw5/page.cpp" > CMakeFiles/cpsTests.dir/page.cpp.i
 
 CMakeFiles/cpsTests.dir/page.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpsTests.dir/page.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/page.cpp" -o CMakeFiles/cpsTests.dir/page.cpp.s
-
-CMakeFiles/cpsTests.dir/human.cpp.o: CMakeFiles/cpsTests.dir/flags.make
-CMakeFiles/cpsTests.dir/human.cpp.o: ../human.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/cpsTests.dir/human.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cpsTests.dir/human.cpp.o -c "/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/human.cpp"
-
-CMakeFiles/cpsTests.dir/human.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpsTests.dir/human.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/human.cpp" > CMakeFiles/cpsTests.dir/human.cpp.i
-
-CMakeFiles/cpsTests.dir/human.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpsTests.dir/human.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/human.cpp" -o CMakeFiles/cpsTests.dir/human.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/NamiKim/Desktop/cs hw/cs372/hw5/page.cpp" -o CMakeFiles/cpsTests.dir/page.cpp.s
 
 # Object files for target cpsTests
 cpsTests_OBJECTS = \
-"CMakeFiles/cpsTests.dir/cpsTests.cpp.o" \
 "CMakeFiles/cpsTests.dir/shapes.cpp.o" \
 "CMakeFiles/cpsTests.dir/compound.cpp.o" \
-"CMakeFiles/cpsTests.dir/page.cpp.o" \
-"CMakeFiles/cpsTests.dir/human.cpp.o"
+"CMakeFiles/cpsTests.dir/page.cpp.o"
 
 # External object files for target cpsTests
 cpsTests_EXTERNAL_OBJECTS =
 
-cpsTests: CMakeFiles/cpsTests.dir/cpsTests.cpp.o
 cpsTests: CMakeFiles/cpsTests.dir/shapes.cpp.o
 cpsTests: CMakeFiles/cpsTests.dir/compound.cpp.o
 cpsTests: CMakeFiles/cpsTests.dir/page.cpp.o
-cpsTests: CMakeFiles/cpsTests.dir/human.cpp.o
 cpsTests: CMakeFiles/cpsTests.dir/build.make
 cpsTests: CMakeFiles/cpsTests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable cpsTests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/NamiKim/Desktop/cs hw/cs372/hw5/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable cpsTests"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cpsTests.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -153,6 +123,6 @@ CMakeFiles/cpsTests.dir/clean:
 .PHONY : CMakeFiles/cpsTests.dir/clean
 
 CMakeFiles/cpsTests.dir/depend:
-	cd "/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps" "/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps" "/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/cmake-build-debug" "/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/cmake-build-debug" "/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/cmake-build-debug/CMakeFiles/cpsTests.dir/DependInfo.cmake" --color=$(COLOR)
+	cd "/Users/NamiKim/Desktop/cs hw/cs372/hw5/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Users/NamiKim/Desktop/cs hw/cs372/hw5" "/Users/NamiKim/Desktop/cs hw/cs372/hw5" "/Users/NamiKim/Desktop/cs hw/cs372/hw5/cmake-build-debug" "/Users/NamiKim/Desktop/cs hw/cs372/hw5/cmake-build-debug" "/Users/NamiKim/Desktop/cs hw/cs372/hw5/cmake-build-debug/CMakeFiles/cpsTests.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/cpsTests.dir/depend
 

@@ -6,11 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/compound.h
+/Users/NamiKim/Desktop/cs hw/cs372/hw5/compound.cpp
+compound.h
+/Users/NamiKim/Desktop/cs hw/cs372/hw5/compound.h
+string
+-
+utility
+-
+
+/Users/NamiKim/Desktop/cs hw/cs372/hw5/compound.h
 utility
 -
 shapes.h
-/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/shapes.h
+/Users/NamiKim/Desktop/cs hw/cs372/hw5/shapes.h
 string
 -
 initializer_list
@@ -20,45 +28,7 @@ memory
 vector
 -
 
-/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/cps.cpp
-page.h
-/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/page.h
-shapes.h
-/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/shapes.h
-compound.h
-/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/compound.h
-human.h
-/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/human.h
-string
--
-iostream
--
-fstream
--
-memory
--
-initializer_list
--
-
-/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/human.h
-shapes.h
-/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/shapes.h
-compound.h
-/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/compound.h
-random
--
-chrono
--
-
-/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/page.h
-shapes.h
-/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/shapes.h
-string
--
-vector
--
-
-/Users/NamiKim/Desktop/cs hw/cs372/project2_cps/cs372_project2_cps/shapes.h
+/Users/NamiKim/Desktop/cs hw/cs372/hw5/shapes.h
 string
 -
 vector
